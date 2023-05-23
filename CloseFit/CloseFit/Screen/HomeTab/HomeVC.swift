@@ -6,25 +6,45 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 
 class HomeVC: UIViewController {
+    
+    private let homeUpperView = UIImageView().then{
+        $0.image = UIImage(named: "home1")
+        $0.backgroundColor = .clear
+    }
+    
+    private let homeLowerView = UIImageView().then{
+        $0.image = UIImage(named: "home2")
+        $0.backgroundColor = .clear
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .yellow
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        setLayout()
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HomeVC{
+    private func setLayout(){
+        self.view.addSubviews([homeUpperView, homeLowerView])
+        
+        homeUpperView.snp.makeConstraints{
+            $0.top.equalToSuperview().offset(50)
+            $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            $0.height.equalTo(450.adjustedW)
+        }
+        
+        homeLowerView.snp.makeConstraints{
+            $0.top.equalTo(homeUpperView.snp.bottom)
+            $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            $0.height.equalTo(220.adjustedW)
+        }
+        
+        
     }
-    */
-
 }
