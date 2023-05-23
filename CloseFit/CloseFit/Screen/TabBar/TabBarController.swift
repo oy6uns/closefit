@@ -19,6 +19,7 @@ final class TabBarController: UITabBarController {
         setTabBar()
         setTabBarItemStyle()
         setTabBarHeight()
+        self.selectedIndex = 2
     }
     
     // TabBar높이 지정해주는 메서드
@@ -55,19 +56,19 @@ final class TabBarController: UITabBarController {
     
     /// TabBarItem을 지정하는 메서드
     private func setTabBar() {
-        let homeTab = makeTabVC(vc: BaseNC(rootViewController: StyleVC()), tabBarTitle: "홈", tabBarImg:"cloth", tabBarSelectedImg: "cloth_filled")
+        let homeTab = makeTabVC(vc: BaseNC(rootViewController: StyleVC()), tabBarTitle: "스타일", tabBarImg:"cloth", tabBarSelectedImg: "cloth_filled")
         homeTab.tabBarItem.tag = 0
         
-        let categoryTab = makeTabVC(vc: BaseNC(rootViewController: AvatarVC()), tabBarTitle: "카테고리", tabBarImg: "avatar", tabBarSelectedImg: "avatar_filled")
+        let categoryTab = makeTabVC(vc: BaseNC(rootViewController: AvatarVC()), tabBarTitle: "아바타", tabBarImg: "avatar", tabBarSelectedImg: "avatar_filled")
         categoryTab.tabBarItem.tag = 1
         
-        let libraryTab = makeTabVC(vc: BaseNC(rootViewController: HomeVC()), tabBarTitle: "도서관 검색", tabBarImg: "home", tabBarSelectedImg: "home_filled")
+        let libraryTab = makeTabVC(vc: BaseNC(rootViewController: HomeVC()), tabBarTitle: "홈", tabBarImg: "home", tabBarSelectedImg: "home_filled")
         libraryTab.tabBarItem.tag = 2
         
-        let notificationTab = makeTabVC(vc: BaseNC(rootViewController: MineVC()), tabBarTitle: "알림함", tabBarImg: "heart", tabBarSelectedImg: "heart_filled")
+        let notificationTab = makeTabVC(vc: BaseNC(rootViewController: MineVC()), tabBarTitle: "찜", tabBarImg: "heart", tabBarSelectedImg: "heart_filled")
         notificationTab.tabBarItem.tag = 3
         
-        let myPageTab = makeTabVC(vc: BaseNC(rootViewController: CameraVC()), tabBarTitle: "내 서재", tabBarImg: "camera", tabBarSelectedImg: "camera_filled")
+        let myPageTab = makeTabVC(vc: BaseNC(rootViewController: CameraVC()), tabBarTitle: "측정", tabBarImg: "camera", tabBarSelectedImg: "camera_filled")
         myPageTab.tabBarItem.tag = 4
         
         let tabs = [homeTab, categoryTab, libraryTab, notificationTab, myPageTab]
