@@ -21,6 +21,13 @@
 		852DB0422A1C441C00A802B4 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0352A1C441C00A802B4 /* UITextField+.swift */; };
 		852DB0442A1FAE2700A802B4 /* MakeClothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */; };
 		852DB0462A1FAE7000A802B4 /* MakeAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */; };
+		852DB0482A1FCBD000A802B4 /* UnderlineSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0472A1FCBD000A802B4 /* UnderlineSegmentedControll.swift */; };
+		852DB04B2A1FCC8800A802B4 /* CategoryVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB04A2A1FCC8800A802B4 /* CategoryVC1.swift */; };
+		852DB04F2A1FCCAC00A802B4 /* CategoryVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB04E2A1FCCAC00A802B4 /* CategoryVC2.swift */; };
+		852DB0512A1FCCB400A802B4 /* CategoryVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0502A1FCCB400A802B4 /* CategoryVC3.swift */; };
+		852DB0532A1FCCBB00A802B4 /* CategoryVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0522A1FCCBB00A802B4 /* CategoryVC4.swift */; };
+		852DB0552A1FCCC400A802B4 /* CategoryVC5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0542A1FCCC400A802B4 /* CategoryVC5.swift */; };
+		852DB0592A1FD1E900A802B4 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0582A1FD1E900A802B4 /* SelectView.swift */; };
 		8554FB452A1608BE00C289A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB442A1608BE00C289A2 /* AppDelegate.swift */; };
 		8554FB472A1608BE00C289A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB462A1608BE00C289A2 /* SceneDelegate.swift */; };
 		8554FBA92A16091E00C289A2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB5A2A16091D00C289A2 /* UIColor+.swift */; };
@@ -55,6 +62,13 @@
 		852DB0352A1C441C00A802B4 /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeClothVC.swift; sourceTree = "<group>"; };
 		852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAvatarVC.swift; sourceTree = "<group>"; };
+		852DB0472A1FCBD000A802B4 /* UnderlineSegmentedControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSegmentedControll.swift; sourceTree = "<group>"; };
+		852DB04A2A1FCC8800A802B4 /* CategoryVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC1.swift; sourceTree = "<group>"; };
+		852DB04E2A1FCCAC00A802B4 /* CategoryVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC2.swift; sourceTree = "<group>"; };
+		852DB0502A1FCCB400A802B4 /* CategoryVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC3.swift; sourceTree = "<group>"; };
+		852DB0522A1FCCBB00A802B4 /* CategoryVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC4.swift; sourceTree = "<group>"; };
+		852DB0542A1FCCC400A802B4 /* CategoryVC5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC5.swift; sourceTree = "<group>"; };
+		852DB0582A1FD1E900A802B4 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		8554FB412A1608BE00C289A2 /* CloseFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8554FB442A1608BE00C289A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8554FB462A1608BE00C289A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +105,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852DB0492A1FCC5700A802B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				852DB04A2A1FCC8800A802B4 /* CategoryVC1.swift */,
+				852DB04E2A1FCCAC00A802B4 /* CategoryVC2.swift */,
+				852DB0502A1FCCB400A802B4 /* CategoryVC3.swift */,
+				852DB0522A1FCCBB00A802B4 /* CategoryVC4.swift */,
+				852DB0542A1FCCC400A802B4 /* CategoryVC5.swift */,
+				852DB0582A1FD1E900A802B4 /* SelectView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8554FB382A1608BE00C289A2 = {
 			isa = PBXGroup;
 			children = (
@@ -276,7 +303,9 @@
 		8554FBEF2A160B1600C289A2 /* StyleTab */ = {
 			isa = PBXGroup;
 			children = (
+				852DB0492A1FCC5700A802B4 /* Category */,
 				8554FBF02A160B2800C289A2 /* StyleVC.swift */,
+				852DB0472A1FCBD000A802B4 /* UnderlineSegmentedControll.swift */,
 			);
 			path = StyleTab;
 			sourceTree = "<group>";
@@ -363,6 +392,7 @@
 			files = (
 				8554FBDD2A16091E00C289A2 /* NetworkLoggerPlugin.swift in Sources */,
 				8554FBF42A160B3F00C289A2 /* AvatarVC.swift in Sources */,
+				852DB0552A1FCCC400A802B4 /* CategoryVC5.swift in Sources */,
 				8554FBAB2A16091E00C289A2 /* Image.swift in Sources */,
 				8554FC4E2A168E5200C289A2 /* BaseNC.swift in Sources */,
 				8554FBF82A160B5300C289A2 /* MineVC.swift in Sources */,
@@ -378,13 +408,19 @@
 				852DB0372A1C441C00A802B4 /* String+.swift in Sources */,
 				8554FBF12A160B2800C289A2 /* StyleVC.swift in Sources */,
 				8554FBD62A16091E00C289A2 /* TabBarController.swift in Sources */,
+				852DB0482A1FCBD000A802B4 /* UnderlineSegmentedControll.swift in Sources */,
 				8554FBDE2A16091E00C289A2 /* NetworkConstant.swift in Sources */,
 				852DB03D2A1C441C00A802B4 /* UIFont+.swift in Sources */,
 				852DB0462A1FAE7000A802B4 /* MakeAvatarVC.swift in Sources */,
 				8554FBDB2A16091E00C289A2 /* Environment.swift in Sources */,
+				852DB0532A1FCCBB00A802B4 /* CategoryVC4.swift in Sources */,
+				852DB0512A1FCCB400A802B4 /* CategoryVC3.swift in Sources */,
+				852DB04B2A1FCC8800A802B4 /* CategoryVC1.swift in Sources */,
 				852DB0382A1C441C00A802B4 /* UIView+.swift in Sources */,
 				8554FB452A1608BE00C289A2 /* AppDelegate.swift in Sources */,
 				8554FB472A1608BE00C289A2 /* SceneDelegate.swift in Sources */,
+				852DB04F2A1FCCAC00A802B4 /* CategoryVC2.swift in Sources */,
+				852DB0592A1FD1E900A802B4 /* SelectView.swift in Sources */,
 				852DB0442A1FAE2700A802B4 /* MakeClothVC.swift in Sources */,
 				852DB03B2A1C441C00A802B4 /* UIStackView+.swift in Sources */,
 				852DB0392A1C441C00A802B4 /* UICollectionVIew+.swift in Sources */,

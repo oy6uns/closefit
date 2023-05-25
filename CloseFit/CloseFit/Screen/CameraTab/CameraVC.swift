@@ -92,7 +92,7 @@ extension CameraVC{
         clothBtn.snp.makeConstraints{
             $0.top.equalTo(upperLine.snp.bottom)
             $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
-            $0.height.equalTo(260.adjustedW)
+            $0.height.equalTo(270.adjustedW)
         }
         
         middleLine.snp.makeConstraints{
@@ -104,7 +104,7 @@ extension CameraVC{
         avatarBtn.snp.makeConstraints{
             $0.top.equalTo(middleLine.snp.bottom)
             $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
-            $0.height.equalTo(260.adjustedW)
+            $0.height.equalTo(270.adjustedW)
         }
         
         lowerLine.snp.makeConstraints{
