@@ -19,6 +19,8 @@
 		852DB03E2A1C441C00A802B4 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0312A1C441C00A802B4 /* UIButton+.swift */; };
 		852DB0402A1C441C00A802B4 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0332A1C441C00A802B4 /* Adjusted+.swift */; };
 		852DB0422A1C441C00A802B4 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0352A1C441C00A802B4 /* UITextField+.swift */; };
+		852DB0442A1FAE2700A802B4 /* MakeClothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */; };
+		852DB0462A1FAE7000A802B4 /* MakeAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */; };
 		8554FB452A1608BE00C289A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB442A1608BE00C289A2 /* AppDelegate.swift */; };
 		8554FB472A1608BE00C289A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB462A1608BE00C289A2 /* SceneDelegate.swift */; };
 		8554FBA92A16091E00C289A2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FB5A2A16091D00C289A2 /* UIColor+.swift */; };
@@ -51,6 +53,8 @@
 		852DB0312A1C441C00A802B4 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		852DB0332A1C441C00A802B4 /* Adjusted+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
 		852DB0352A1C441C00A802B4 /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeClothVC.swift; sourceTree = "<group>"; };
+		852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAvatarVC.swift; sourceTree = "<group>"; };
 		8554FB412A1608BE00C289A2 /* CloseFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8554FB442A1608BE00C289A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8554FB462A1608BE00C289A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				8554FBF92A160B6100C289A2 /* CameraVC.swift */,
+				852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */,
+				852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */,
 			);
 			path = CameraTab;
 			sourceTree = "<group>";
@@ -374,10 +380,12 @@
 				8554FBD62A16091E00C289A2 /* TabBarController.swift in Sources */,
 				8554FBDE2A16091E00C289A2 /* NetworkConstant.swift in Sources */,
 				852DB03D2A1C441C00A802B4 /* UIFont+.swift in Sources */,
+				852DB0462A1FAE7000A802B4 /* MakeAvatarVC.swift in Sources */,
 				8554FBDB2A16091E00C289A2 /* Environment.swift in Sources */,
 				852DB0382A1C441C00A802B4 /* UIView+.swift in Sources */,
 				8554FB452A1608BE00C289A2 /* AppDelegate.swift in Sources */,
 				8554FB472A1608BE00C289A2 /* SceneDelegate.swift in Sources */,
+				852DB0442A1FAE2700A802B4 /* MakeClothVC.swift in Sources */,
 				852DB03B2A1C441C00A802B4 /* UIStackView+.swift in Sources */,
 				852DB0392A1C441C00A802B4 /* UICollectionVIew+.swift in Sources */,
 				8554FBDC2A16091E00C289A2 /* Encodable.swift in Sources */,

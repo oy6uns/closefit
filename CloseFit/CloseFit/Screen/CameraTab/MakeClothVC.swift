@@ -20,7 +20,6 @@ class MakeClothVC: UIViewController {
         $0.text = "의류등록"
         $0.font = .systemFont(ofSize: 20.adjustedW, weight: .medium)
     }
-
     
     private let detailLabel = UILabel().then {
         $0.numberOfLines = 2
