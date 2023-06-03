@@ -11,6 +11,8 @@ import Then
 
 class MakeAvatarVC: UIViewController {
     
+    private let avatarVideo = AvatarVideo()
+    
     private let closeBtn = UIButton().then {
         $0.setBackgroundImage(UIImage(named: "closeBtn"), for: .normal)
         $0.contentMode = .scaleAspectFit
@@ -147,11 +149,35 @@ class MakeAvatarVC: UIViewController {
         super.viewDidLoad()
         setLayout()
         pressBtn()
+        avatarVideo.onCompletion = { [weak self] in
+            let madeAvatarVC = MadeAvatarVC()
+            madeAvatarVC.modalPresentationStyle = .overFullScreen
+            self?.present(madeAvatarVC, animated: true, completion: nil)
+        }
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.didDismissDetailNotification(_:)),
+            name: NSNotification.Name("DismissModalView"),
+            object: nil
+        )
+    }
+    
+    // MARK: - Functions
+    @objc func didDismissDetailNotification(_ notification: Notification) {
+        DispatchQueue.main.async { [self] in
+            dismiss(animated: true)
+        }
     }
     
     private func pressBtn(){
         closeBtn.press { [self] in
             self.dismiss(animated: true)
+        }
+        
+        measureBtn.press { [weak self] in
+            self?.avatarVideo.modalPresentationStyle = .overFullScreen
+            self?.present(self!.avatarVideo, animated: true, completion: nil)
         }
     }
 }

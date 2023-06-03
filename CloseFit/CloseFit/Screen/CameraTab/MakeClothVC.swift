@@ -11,6 +11,8 @@ import Then
 
 class MakeClothVC: UIViewController {
     
+    private let clothVideo = ClothVideo()
+    
     private let closeBtn = UIButton().then {
         $0.setBackgroundImage(UIImage(named: "closeBtn"), for: .normal)
         $0.contentMode = .scaleAspectFit
@@ -25,7 +27,7 @@ class MakeClothVC: UIViewController {
         $0.numberOfLines = 2
         let boldFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .medium)
         let lightFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .light)
-
+        
         let boldString = NSAttributedString(string: "정확한 측정", attributes: [
             .font: boldFont])
         let normalString = NSAttributedString(string: "을 위해\n의류 사이즈를 입력해 주세요.", attributes: [
@@ -43,9 +45,9 @@ class MakeClothVC: UIViewController {
     
     private let clothBtn1 = UIButton().then {
         $0.backgroundColor = .systemGray
-//        $0.layer.cornerRadius = 25
-//        $0.layer.borderWidth = 1.0
-//        $0.layer.borderColor = UIColor.hBlue3.cgColor
+        //        $0.layer.cornerRadius = 25
+        //        $0.layer.borderWidth = 1.0
+        //        $0.layer.borderColor = UIColor.hBlue3.cgColor
         $0.titleLabel?.font = .systemFont(ofSize: 24.adjustedW, weight: .medium)
         $0.setTitle("상의", for: .normal)
         $0.setTitleColor(.white, for: .normal)
@@ -53,9 +55,9 @@ class MakeClothVC: UIViewController {
     
     private let clothBtn2 = UIButton().then {
         $0.backgroundColor = .systemGray
-//        $0.layer.cornerRadius = 25
-//        $0.layer.borderWidth = 1.0
-//        $0.layer.borderColor = UIColor.hBlue3.cgColor
+        //        $0.layer.cornerRadius = 25
+        //        $0.layer.borderWidth = 1.0
+        //        $0.layer.borderColor = UIColor.hBlue3.cgColor
         $0.titleLabel?.font = .systemFont(ofSize: 24.adjustedW, weight: .medium)
         $0.setTitle("하의", for: .normal)
         $0.setTitleColor(.white, for: .normal)
@@ -133,7 +135,7 @@ class MakeClothVC: UIViewController {
         }
         
         let optionBtns = [clothBtn1, clothBtn2, sizeBtn1, sizeBtn2, sizeBtn3, sizeBtn4, sizeBtn5, sizeBtn6]
-
+        
         for button in optionBtns {
             button.press {
                 if button.backgroundColor == .black {
@@ -142,6 +144,13 @@ class MakeClothVC: UIViewController {
                     button.backgroundColor = .black
                 }
             }
+        }
+        measureBtn.press { [weak self] in
+            self?.clothVideo.onCompletion = {
+                self?.dismiss(animated: true)
+            }
+            self?.clothVideo.modalPresentationStyle = .overFullScreen
+            self?.present(self!.clothVideo, animated: true, completion: nil)
         }
     }
 }
@@ -158,7 +167,7 @@ extension MakeClothVC{
             $0.leading.equalTo(self.view.safeAreaLayoutGuide).offset(16)
             $0.height.width.equalTo(24.adjustedW)
         }
-
+        
         titleLabel.snp.makeConstraints{
             $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(20.adjustedW)
             $0.centerX.equalToSuperview()
