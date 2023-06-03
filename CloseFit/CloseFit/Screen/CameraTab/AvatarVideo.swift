@@ -42,7 +42,7 @@ class AvatarVideo: UIViewController {
 //        let playbackDuration = 4.0 // 재생 시간을 4초로 설정
 //        let timeRemaining = duration - playbackDuration
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 40.0) { [weak self] in
             self?.videoPlaybackDidFinish()
         }
         
