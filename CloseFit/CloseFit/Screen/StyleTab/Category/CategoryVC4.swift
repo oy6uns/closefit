@@ -82,12 +82,9 @@ extension CategoryVC4: UICollectionViewDelegateFlowLayout{
         return imageListLineSpacing
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let detailBookVC = DetailViewController()
-//        detailBookVC.bookdata = CameBookVC.bookList[indexPath.row]
-//        detailBookVC.modalPresentationStyle = .overFullScreen
-//        present(detailBookVC, animated: true, completion:nil)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        StyleVC.styleImage.image = UIImage(named: "2wear")
+    }
 }
 
 // MARK: - UICollectionViewDataSource
