@@ -25,7 +25,7 @@ class StyleVC: UIViewController {
         return view
     }()
 
-    private let styleImage = UIImageView().then {
+    static var styleImage = UIImageView().then {
         $0.image = UIImage(named: "base")
         $0.contentMode = .scaleToFill
     }
@@ -103,18 +103,18 @@ extension StyleVC {
     // MARK: - Layout Helpers
     private func layout(){
         view.backgroundColor = .white
-        self.view.addSubview(self.styleImage)
+        self.view.addSubview(StyleVC.styleImage)
         self.view.addSubview(self.segmentedControl)
         self.view.addSubview(self.pageViewController.view)
 
-        styleImage.snp.makeConstraints{
+        StyleVC.styleImage.snp.makeConstraints{
             $0.top.leading.trailing.equalToSuperview()
             $0.leading.equalToSuperview().offset(15)
             $0.height.equalTo(380.adjustedW)
         }
         
         segmentedControl.snp.makeConstraints{
-            $0.top.equalTo(styleImage.snp.bottom)
+            $0.top.equalTo(StyleVC.styleImage.snp.bottom)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(50)
         }

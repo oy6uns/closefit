@@ -49,6 +49,11 @@
 		8554FBF82A160B5300C289A2 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FBF72A160B5300C289A2 /* MineVC.swift */; };
 		8554FBFA2A160B6100C289A2 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FBF92A160B6100C289A2 /* CameraVC.swift */; };
 		8554FC4E2A168E5200C289A2 /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FC4D2A168E5200C289A2 /* BaseNC.swift */; };
+		858624E42A28812400B3716B /* cloth.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 858624E22A28812400B3716B /* cloth.mp4 */; };
+		858624E52A28812400B3716B /* avatar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 858624E32A28812400B3716B /* avatar.mp4 */; };
+		858624E72A28820100B3716B /* ClothVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624E62A28820100B3716B /* ClothVideo.swift */; };
+		858624E92A2886E200B3716B /* AvatarVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624E82A2886E200B3716B /* AvatarVideo.swift */; };
+		858624EB2A2888C000B3716B /* MadeAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624EA2A2888C000B3716B /* MadeAvatarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +98,11 @@
 		8554FBF92A160B6100C289A2 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		8554FBFB2A160FEE00C289A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8554FC4D2A168E5200C289A2 /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
+		858624E22A28812400B3716B /* cloth.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloth.mp4; sourceTree = "<group>"; };
+		858624E32A28812400B3716B /* avatar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = avatar.mp4; sourceTree = "<group>"; };
+		858624E62A28820100B3716B /* ClothVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothVideo.swift; sourceTree = "<group>"; };
+		858624E82A2886E200B3716B /* AvatarVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarVideo.swift; sourceTree = "<group>"; };
+		858624EA2A2888C000B3716B /* MadeAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeAvatarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +265,8 @@
 		8554FBE92A160A3500C289A2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				858624E32A28812400B3716B /* avatar.mp4 */,
+				858624E22A28812400B3716B /* cloth.mp4 */,
 				8554FBFB2A160FEE00C289A2 /* Assets.xcassets */,
 				8554FBEA2A160A3B00C289A2 /* Support */,
 			);
@@ -278,6 +290,9 @@
 				8554FBF92A160B6100C289A2 /* CameraVC.swift */,
 				852DB0432A1FAE2700A802B4 /* MakeClothVC.swift */,
 				852DB0452A1FAE7000A802B4 /* MakeAvatarVC.swift */,
+				858624E62A28820100B3716B /* ClothVideo.swift */,
+				858624E82A2886E200B3716B /* AvatarVideo.swift */,
+				858624EA2A2888C000B3716B /* MadeAvatarVC.swift */,
 			);
 			path = CameraTab;
 			sourceTree = "<group>";
@@ -384,6 +399,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858624E52A28812400B3716B /* avatar.mp4 in Resources */,
+				858624E42A28812400B3716B /* cloth.mp4 in Resources */,
 				852DB0272A16920100A802B4 /* Assets.xcassets in Resources */,
 				852DB0282A16920100A802B4 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -396,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858624E72A28820100B3716B /* ClothVideo.swift in Sources */,
 				8554FBDD2A16091E00C289A2 /* NetworkLoggerPlugin.swift in Sources */,
 				8554FBF42A160B3F00C289A2 /* AvatarVC.swift in Sources */,
 				852DB0552A1FCCC400A802B4 /* CategoryVC5.swift in Sources */,
@@ -407,6 +425,8 @@
 				8554FBA92A16091E00C289A2 /* UIColor+.swift in Sources */,
 				852DB0422A1C441C00A802B4 /* UITextField+.swift in Sources */,
 				852DB0402A1C441C00A802B4 /* Adjusted+.swift in Sources */,
+				858624EB2A2888C000B3716B /* MadeAvatarVC.swift in Sources */,
+				858624E92A2886E200B3716B /* AvatarVideo.swift in Sources */,
 				852DB0362A1C441C00A802B4 /* UILabel+.swift in Sources */,
 				852DB03E2A1C441C00A802B4 /* UIButton+.swift in Sources */,
 				8554FBF62A160B4900C289A2 /* HomeVC.swift in Sources */,
