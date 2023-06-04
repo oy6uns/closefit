@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851C3D0D2A2CC951009AB7B9 /* avatartab.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 851C3D0C2A2CC951009AB7B9 /* avatartab.mp4 */; };
 		852DB0272A16920100A802B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8554FBFB2A160FEE00C289A2 /* Assets.xcassets */; };
 		852DB0282A16920100A802B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8554FB4F2A1608BF00C289A2 /* LaunchScreen.storyboard */; };
 		852DB0362A1C441C00A802B4 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852DB0292A1C441C00A802B4 /* UILabel+.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		851C3D0C2A2CC951009AB7B9 /* avatartab.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = avatartab.mp4; sourceTree = "<group>"; };
 		852DB0292A1C441C00A802B4 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		852DB02A2A1C441C00A802B4 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		852DB02B2A1C441C00A802B4 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		8554FBE92A160A3500C289A2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				851C3D0C2A2CC951009AB7B9 /* avatartab.mp4 */,
 				858624E32A28812400B3716B /* avatar.mp4 */,
 				858624E22A28812400B3716B /* cloth.mp4 */,
 				8554FBFB2A160FEE00C289A2 /* Assets.xcassets */,
@@ -399,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851C3D0D2A2CC951009AB7B9 /* avatartab.mp4 in Resources */,
 				858624E52A28812400B3716B /* avatar.mp4 in Resources */,
 				858624E42A28812400B3716B /* cloth.mp4 in Resources */,
 				852DB0272A16920100A802B4 /* Assets.xcassets in Resources */,
