@@ -85,6 +85,8 @@ final class TabBarController: UITabBarController {
         let tabBarAppearance = UITabBarAppearance()
         let tabBarItemAppearance = UITabBarItemAppearance()
         
+        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemGray]
+        
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
         tabBar.standardAppearance = tabBarAppearance
     }

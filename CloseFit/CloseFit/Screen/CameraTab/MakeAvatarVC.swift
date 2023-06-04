@@ -20,14 +20,16 @@ class MakeAvatarVC: UIViewController {
     
     private let titleLabel = UILabel().then{
         $0.text = "아바타 생성"
+        $0.textColor = .black
         $0.font = .systemFont(ofSize: 20.adjustedW, weight: .medium)
     }
     
     private let detailLabel = UILabel().then {
         $0.numberOfLines = 2
+        $0.textColor = .black
         let boldFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .medium)
         let lightFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .light)
-
+        
         let normalString1 = NSAttributedString(string: "정확한 측정을 위해\n", attributes: [
             .font: lightFont])
         let boldString1 = NSAttributedString(string: "키", attributes: [
@@ -50,71 +52,77 @@ class MakeAvatarVC: UIViewController {
     }
     
     let heightTextField = UITextField().then {
-        $0.backgroundColor = .systemGray5
+        $0.backgroundColor = .lightGray
         $0.textAlignment = .right
+        $0.textColor = .black
         $0.layer.borderWidth = 1.0
         $0.layer.borderColor = UIColor.black.cgColor
-
+        
         // 왼쪽 뷰에 '키' 라벨 추가
         let leftLabel = UILabel()
         leftLabel.text = "    키"
+        leftLabel.textColor = .black
         leftLabel.isUserInteractionEnabled = false
         $0.leftView = leftLabel
         $0.leftViewMode = .always
-
+        
         // 오른쪽 뷰에 'cm' 라벨과 패딩 추가
         let rightLabel = UILabel()
         rightLabel.text = "cm       "
+        rightLabel.textColor = .black
         rightLabel.isUserInteractionEnabled = false
         
         let paddingView = UIView()
         paddingView.addSubview(rightLabel)
         paddingView.isUserInteractionEnabled = false
-
+        
         rightLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             rightLabel.trailingAnchor.constraint(equalTo: paddingView.trailingAnchor),
             rightLabel.centerYAnchor.constraint(equalTo: paddingView.centerYAnchor)
         ])
-
+        
         // paddingView의 너비를 rightLabel의 intrinsicContentSize와 동일하게 설정
         paddingView.widthAnchor.constraint(equalTo: rightLabel.widthAnchor, constant: 4).isActive = true
-
+        
         $0.rightView = paddingView
         $0.rightViewMode = .always
     }
     
     let weightTextField = UITextField().then {
-        $0.backgroundColor = .systemGray5
+        $0.backgroundColor = .lightGray
         $0.textAlignment = .right
+        $0.textColor = .black
         $0.layer.borderWidth = 1.0
         $0.layer.borderColor = UIColor.black.cgColor
-
+        
         // 왼쪽 뷰에 '몸무게' 라벨 추가
         let leftLabel = UILabel()
         leftLabel.text = "    몸무게"
+        leftLabel.textColor = .black
         leftLabel.isUserInteractionEnabled = false
         $0.leftView = leftLabel
         $0.leftViewMode = .always
-
+        
         // 오른쪽 뷰에 'kg' 라벨과 패딩 추가
         let rightLabel = UILabel()
         rightLabel.text = "kg       "
+        rightLabel.textColor = .black
         rightLabel.isUserInteractionEnabled = false
         
         let paddingView = UIView()
         paddingView.addSubview(rightLabel)
         paddingView.isUserInteractionEnabled = false
-
+        
         rightLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             rightLabel.trailingAnchor.constraint(equalTo: paddingView.trailingAnchor),
             rightLabel.centerYAnchor.constraint(equalTo: paddingView.centerYAnchor)
         ])
-
+        
         // paddingView의 너비를 rightLabel의 intrinsicContentSize와 동일하게 설정
         paddingView.widthAnchor.constraint(equalTo: rightLabel.widthAnchor, constant: 4).isActive = true
-
+        
         $0.rightView = paddingView
         $0.rightViewMode = .always
     }
@@ -144,7 +152,7 @@ class MakeAvatarVC: UIViewController {
         $0.setTitle("측정 시작하기", for: .normal)
         $0.setTitleColor(.white, for: .normal)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayout()
@@ -161,6 +169,9 @@ class MakeAvatarVC: UIViewController {
             name: NSNotification.Name("DismissModalView"),
             object: nil
         )
+        // Add tap gesture recognizer to dismiss the keyboard
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
     }
     
     // MARK: - Functions
@@ -168,6 +179,10 @@ class MakeAvatarVC: UIViewController {
         DispatchQueue.main.async { [self] in
             dismiss(animated: true)
         }
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     private func pressBtn(){
@@ -186,7 +201,7 @@ extension MakeAvatarVC{
     private func setLayout(){
         view.backgroundColor = .white
         view.addSubviews([closeBtn, titleLabel, detailLabel, subLabel, heightTextField, weightTextField, subLabel2])
-
+        
         view.addSubviews([checkBox, checkLabel, measureBtn])
         
         closeBtn.snp.makeConstraints{
@@ -194,7 +209,7 @@ extension MakeAvatarVC{
             $0.leading.equalTo(self.view.safeAreaLayoutGuide).offset(16)
             $0.height.width.equalTo(24.adjustedW)
         }
-
+        
         titleLabel.snp.makeConstraints{
             $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(20.adjustedW)
             $0.centerX.equalToSuperview()

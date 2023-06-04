@@ -12,19 +12,20 @@ import Then
 class CameraVC: UIViewController {
     
     private let upperLine = UIView().then{
-        $0.backgroundColor = .systemGray6
+        $0.backgroundColor = .lightGray
     }
     
     private let middleLine = UIView().then{
-        $0.backgroundColor = .systemGray6
+        $0.backgroundColor = .lightGray
     }
     
     private let lowerLine = UIView().then{
-        $0.backgroundColor = .systemGray6
+        $0.backgroundColor = .lightGray
     }
     
     private let titleLabel = UILabel().then{
         $0.text = "측정"
+        $0.textColor = .black
         $0.font = .systemFont(ofSize: 20.adjustedW, weight: .medium)
     }
     

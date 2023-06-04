@@ -20,11 +20,13 @@ class MakeClothVC: UIViewController {
     
     private let titleLabel = UILabel().then{
         $0.text = "의류등록"
+        $0.textColor = .black
         $0.font = .systemFont(ofSize: 20.adjustedW, weight: .medium)
     }
     
     private let detailLabel = UILabel().then {
         $0.numberOfLines = 2
+        $0.textColor = .black
         let boldFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .medium)
         let lightFont = UIFont.systemFont(ofSize: 24.adjustedW, weight: .light)
         
