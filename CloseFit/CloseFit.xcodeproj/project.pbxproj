@@ -50,8 +50,8 @@
 		8554FBF82A160B5300C289A2 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FBF72A160B5300C289A2 /* MineVC.swift */; };
 		8554FBFA2A160B6100C289A2 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FBF92A160B6100C289A2 /* CameraVC.swift */; };
 		8554FC4E2A168E5200C289A2 /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554FC4D2A168E5200C289A2 /* BaseNC.swift */; };
+		855D95BA2A49E7960000B607 /* avatar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 855D95B92A49E7960000B607 /* avatar.mp4 */; };
 		858624E42A28812400B3716B /* cloth.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 858624E22A28812400B3716B /* cloth.mp4 */; };
-		858624E52A28812400B3716B /* avatar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 858624E32A28812400B3716B /* avatar.mp4 */; };
 		858624E72A28820100B3716B /* ClothVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624E62A28820100B3716B /* ClothVideo.swift */; };
 		858624E92A2886E200B3716B /* AvatarVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624E82A2886E200B3716B /* AvatarVideo.swift */; };
 		858624EB2A2888C000B3716B /* MadeAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858624EA2A2888C000B3716B /* MadeAvatarVC.swift */; };
@@ -100,8 +100,8 @@
 		8554FBF92A160B6100C289A2 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		8554FBFB2A160FEE00C289A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8554FC4D2A168E5200C289A2 /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
+		855D95B92A49E7960000B607 /* avatar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = avatar.mp4; sourceTree = "<group>"; };
 		858624E22A28812400B3716B /* cloth.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloth.mp4; sourceTree = "<group>"; };
-		858624E32A28812400B3716B /* avatar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = avatar.mp4; sourceTree = "<group>"; };
 		858624E62A28820100B3716B /* ClothVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothVideo.swift; sourceTree = "<group>"; };
 		858624E82A2886E200B3716B /* AvatarVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarVideo.swift; sourceTree = "<group>"; };
 		858624EA2A2888C000B3716B /* MadeAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeAvatarVC.swift; sourceTree = "<group>"; };
@@ -268,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				851C3D0C2A2CC951009AB7B9 /* avatartab.mp4 */,
-				858624E32A28812400B3716B /* avatar.mp4 */,
 				858624E22A28812400B3716B /* cloth.mp4 */,
+				855D95B92A49E7960000B607 /* avatar.mp4 */,
 				8554FBFB2A160FEE00C289A2 /* Assets.xcassets */,
 				8554FBEA2A160A3B00C289A2 /* Support */,
 			);
@@ -403,7 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				851C3D0D2A2CC951009AB7B9 /* avatartab.mp4 in Resources */,
-				858624E52A28812400B3716B /* avatar.mp4 in Resources */,
+				855D95BA2A49E7960000B607 /* avatar.mp4 in Resources */,
 				858624E42A28812400B3716B /* cloth.mp4 in Resources */,
 				852DB0272A16920100A802B4 /* Assets.xcassets in Resources */,
 				852DB0282A16920100A802B4 /* LaunchScreen.storyboard in Resources */,

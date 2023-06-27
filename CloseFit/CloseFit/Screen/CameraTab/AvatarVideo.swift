@@ -32,6 +32,7 @@ class AvatarVideo: UIViewController {
         player = AVPlayer(url: url)
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = self.view.bounds
+        playerLayer?.videoGravity = .resizeAspectFill
         if let playerLayer = playerLayer {
             self.view.layer.addSublayer(playerLayer)
         }
